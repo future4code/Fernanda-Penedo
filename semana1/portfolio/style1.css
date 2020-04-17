@@ -1,0 +1,32 @@
+.nomeh1{
+    background-color: bisque;
+    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+
+   }
+
+.paragrafo{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+.lista{
+    text-align: left;
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+}
+
+.nomeh2{
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Lucida Sans';
+
+}

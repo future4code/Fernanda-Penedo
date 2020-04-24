@@ -1,0 +1,21 @@
+
+header{
+    color: blueviolet;
+    background-color: rgb(70, 56, 16);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+    
+}
+
+section{
+   width: 80%; 
+}

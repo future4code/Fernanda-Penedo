@@ -51,8 +51,7 @@ const resultadoC = array[i]%array[1]
 console.log('VII. ', resultadoC)
 
 
-
-/*```jsx
+/*RESPOSTAS ABAIXO REFERENTE INTERPRETAÇÃO DE CÓDIGO```jsx
 let array
 console.log('I. ', array)
 Faltou declarar o que terá em array para ser procurado. Seria item I
@@ -99,26 +98,62 @@ Com .length
 
 d. Indique todas as mensagens impressas no console.
 III.  11
-IV.  3  e  4
-V.  19  e  9
-VI.  3
-VII.  1
+index.js:38 IV.  3  e  4
+index.js:42 V.  19  e  9
+index.js:46 VI.  3
+index.js:51 VII.  1
 */
+
+//EXERCICIO ESCRITA DE CODIGO 1//
+
+let Kelvin = (77 - 32) * 5 / 9 + 273.15
+console.log('1a.',Kelvin + "K")
+
+let GrausFarenheit = (80) * 9 / 5 + 32
+console.log("1b. ",GrausFarenheit + "°F")
+
+
+let GrausFarenheit1 = (30) * 9 / 5 + 32
+let Kelvin1 = 30 + 273.15
+console.log("1c. ",GrausFarenheit1 + "°F", " e ", Kelvin1 + "K")
+
+let Kelvin2 = prompt ("Insira uma temperatura em Celsius")
+let Kelvin3 = 273.15 
+const valorKelvin = Number(Kelvin2) + Number(Kelvin3)
+console.log("1d. ", valorKelvin + "K") 
+
 //EXERCICIO ESCRITA DE CÓDIGO 2//
 
-const nome = prompt ("Qual seu nome?")
-let nome1 = "Fernanda"
-console.log(nome1)
+const nome = prompt ("Qual seu primeiro nome?")
+const sobrenome = prompt("Qual seu sobrenome?")
+console.log(nome + " " + sobrenome)
+
+let apelido = prompt("Qual seu apelido?")
+console.log(apelido)
 
 const endereco = prompt ("Qual seu endereco?")
-let endereço1 = "Rua das Luzes"
-let endereço2 = " n. 1000"
-let endcompleto = endereço1 + endereço2
+console.log(endereco)
 
-console.log(endcompleto)
+let idade = prompt ("quantos anos você tem?") 
+console.log(idade)
 
-/* resposta dos exercicios
-index.js:6 a.  false
+let idadeMae = prompt("Quantos anos tem sua mãe?")
+console.log(idadeMae)
+
+
+//RESPOSTAS ESCRITA DE CÓDIGO EXERCÍCIO 3//
+
+let kw = 0.05 * 280
+console.log("3a. ",kw + "R$")
+
+let kwValorCheio = 0.05 * 280
+let kwDesconto = kwValorCheio * 0.15
+
+console.log("3b. ",kwValorCheio - kwDesconto)
+
+
+/* RESPOSTA DE TODOS OS EXERCÍCIOS
+a.  false
 index.js:12 b.  false
 index.js:18 c.  true
 index.js:24 d.  false
@@ -128,8 +163,20 @@ index.js:38 IV.  3  e  4
 index.js:42 V.  19  e  9
 index.js:46 VI.  3
 index.js:51 VII.  1
-index.js:111 Fernanda
-index.js:118 Rua das Luzes n. 1000  */
+index.js:110 1a. 298.15K
+index.js:113 1b.  176°F
+index.js:118 1c.  86°F  e  303.15K
+index.js:123 1d.  283.15K
+index.js:129 Fernanda Penedo
+index.js:132 Tata
+index.js:135 Rua das Flores, 1000
+index.js:138 37
+index.js:141 62
+index.js:147 3a.  14R$
+index.js:152 3b.  11.9
+*/
+
+
 
 
 

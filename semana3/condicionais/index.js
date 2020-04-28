@@ -38,10 +38,10 @@ if(numero1 > 0 && numero2 > 0) {
     mensagem = "Número 1 é maior que o 2!"
   } else {
     mensagem = "Número 1 é menor ou igual ao 2!"
-  } 
+  } console.log(mensagem)
 }
 
-console.log(mensagem)
+//console.log(mensagem)//
 
 /*3. Considere um usuário que digita os números 3 e 4 respectivamente. 
 Qual será a mensagem do terminal? Haverá algum erro? 
@@ -56,11 +56,11 @@ decrescente. O que acontece com o seu programa se os 2 números forem iguais?
 (é só testar e colocar um comentário descrevendo o que aconteceu)
 R. Se forem iguais aparecem os números um seguido do outro, exemplo 2 2 */
 
-let numero1 = prompt("Digite o primeiro número")
-let numero2 = prompt("Digite o segundo número")
+let numero001 = prompt("Digite o primeiro número")
+let numero002 = prompt("Digite o segundo número")
 
-let n1 = Number(numero1)
-let n2 = Number(numero2)
+let n1 = Number(numero001)
+let n2 = Number(numero002)
 
 if(n1 > n2) {
     console.log(n1, n2)

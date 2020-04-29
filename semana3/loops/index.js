@@ -73,14 +73,30 @@ R. [8, 3, 13, 4, 6, 2.1, 7, 12, 9, 10.3, 11, 5.5]  length: 12
 __proto__: Array(0)
 
 c. Escreva um programa que devolva um novo array contendo, somente, os números pares do array original.
+R. 80, 30, 130, 40, 60, 70, 120, 90, 110]
 
 d. Escreva um programa que gere um novo array contendo strings, da seguinte forma: "O elemento do índex i é: numero"
 
 Exemplos do que o código tem que fazer em cada item:
 
 Respostas 3.a e 3b. 
-O maior é 130 e o menor 21
-index.js:107 (12) [8, 3, 13, 4, 6, 2.1, 7, 12, 9, 10.3, 11, 5.5]*/
+3 a.O maior é 130 e o menor 21
+3 b. index.js:107 (12) [8, 3, 13, 4, 6, 2.1, 7, 12, 9, 10.3, 11, 5.5]
+3 c. [80, 30, 130, 40, 60, 70, 120, 90, 110]
+(9) [80, 30, 130, 40, 60, 70, 120, 90, 110]
+index.js:131 O elemento do índex 0 é: 80
+index.js:131 O elemento do índex 0 é: 30
+index.js:131 O elemento do índex 0 é: 130
+index.js:131 O elemento do índex 0 é: 40
+index.js:131 O elemento do índex 0 é: 60
+index.js:131 O elemento do índex 0 é: 21
+index.js:131 O elemento do índex 0 é: 70
+index.js:131 O elemento do índex 0 é: 120
+index.js:131 O elemento do índex 0 é: 90
+index.js:131 O elemento do índex 0 é: 103
+index.js:131 O elemento do índex 0 é: 110
+index.js:131 O elemento do índex 0 é: 55
+*/
 
 
 const array = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55] 
@@ -107,3 +123,24 @@ for(let numero of array1) {
   vdividido.push(numero / 10)
 }
 console.log(vdividido)
+
+// 3.c//
+const array2 = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+let pares = []
+
+for(let valor of array2) {
+  if (valor%2 === 0) {
+    pares.push(valor)
+  }
+}
+console.log(pares)
+
+// 3d.//
+const array3 = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+let strings = [0]
+
+
+for(let i = 0; i < array.length; i++) {
+  let strings = array3 [i]
+  console.log("O elemento do índex 0 é: " + strings)
+}

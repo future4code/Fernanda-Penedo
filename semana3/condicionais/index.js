@@ -2,7 +2,7 @@
 se for ímpar nao passou no TextDecoderStream.*/
 
 
-let fruta = prompt("Escolha uma fruta")
+/*let fruta = prompt("Escolha uma fruta")
 let preco
 switch (fruta) {
   case "Laranja":
@@ -29,7 +29,7 @@ console.log("O preço da fruta ", fruta, " é ", "R$ ", preco)
 2d. o preço da Pêra seria R$ 5,00 e nao R$ 5.5*/
 
 
-const numero1 = prompt("Digite o primeiro número.")
+/*const numero1 = prompt("Digite o primeiro número.")
 const numero2 = prompt("Digite o próximo número?")
 
 if(numero1 > 0 && numero2 > 0) {
@@ -56,7 +56,7 @@ decrescente. O que acontece com o seu programa se os 2 números forem iguais?
 (é só testar e colocar um comentário descrevendo o que aconteceu)
 R. Se forem iguais aparecem os números um seguido do outro, exemplo 2 2 */
 
-let numero001 = prompt("Digite o primeiro número")
+/*let numero001 = prompt("Digite o primeiro número")
 let numero002 = prompt("Digite o segundo número")
 
 let n1 = Number(numero001)
@@ -73,7 +73,7 @@ Ainda os imprima na ordem decrescente. O que acontece com seu programa se os 3 n
 forem iguais? (é só testar e colocar um comentário descrevendo o que aconteceu)
 R. os numeros se forem iguais aparecem na sequencia um ao lado do outro 2 2 2*/
 
-let numero01 = prompt("Digite o primeiro número")
+/*let numero01 = prompt("Digite o primeiro número")
 let numero02 = prompt("Digite o segundo número")
 let numero03 = prompt("Digite o terceiro número")
 
@@ -81,18 +81,32 @@ let n01 = Number(numero01)
 let n02 = Number(numero02)
 let n03 = Number(numero03)
 
-if(n01 > n02 && n02 > n03) {
+if(n01 > n02 && n01 > n03) {
     console.log(n01, n02, n03)
-}else {
-    console.log(n03, n02, n01)
-} if(n02 > n01 && n01 > n03) {
+} else if (n02 > n01 && n02 > n03) {
     console.log(n02, n01, n03)
-}else {
-    console.log(n03, n01, n02)
+} else {
+    console.log(n03, n02, n01)
 }
-/* respostas do console (incompleto 4 b.):
-Não passou no teste.
-index.js:59 O preço da fruta  uva  é  R$  5
-index.js:101 34 1
-index.js:121 125 23 80
-index.js:125 125 80 238*/
+
+/*4c. Agora, impeça que o usuário digite 3 números iguais. 
+Caso todos sejam iguais, mostre um aviso ao usuário indicando que ele deve, ao menos,
+inserir um número diferente.*/ 
+
+let nuMero1 = prompt("Digite o primeiro número")
+let nuMero2 = prompt("Digite o segundo número")
+let nuMero3 = prompt("Digite o terceiro número")
+
+let N1 = Number(nuMero1)
+let N2 = Number(nuMero2)
+let N3 = Number(nuMero3)
+
+if(N1 > N2 && N2 > N3) {
+    console.log(N1, N2, N3)
+} else if (N1 === N2 && N2 === N3) {
+    console.log("Nao digitar valores iguais")
+} else {
+    console.log(N1, N2, N3)
+}
+
+

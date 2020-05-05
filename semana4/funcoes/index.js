@@ -1,4 +1,4 @@
-const minhaFuncao = (quantidade) => {
+/*const minhaFuncao = (quantidade) => {
 	const array = []
 	for(let i = 0; i < quantidade; i+=2) {
 			for(let j = 0; j < i; j++) {
@@ -8,7 +8,7 @@ const minhaFuncao = (quantidade) => {
 	return array
 }
 
-console.log(minhaFuncao(8))
+console.log(minhaFuncao(8))*/
 
 /* 1 a. Indique qual será o resultado da função caso ela seja chamada como `minhaFuncao(2)`
 R. [] vazio
@@ -26,7 +26,7 @@ e o `nome` fosse um número, ao se chamar a função? Justifique sua resposta.
 R. Sim. dá tudo indefined.. E também porque não é Paulinha é Paula. O Darvas é o 0, o João é o 2
 Paula é indefined.*/
 
-let arrayDeNomes = ["Darvas", "Goli", "João", "Paulinha", "Soter"];
+/*let arrayDeNomes = ["Darvas", "Goli", "João", "Paulinha", "Soter"];
 const funcao = (lista, nome) => {
   for (let i = 0; i < lista.length; i++) {
     if (lista[i] === nome) {
@@ -37,15 +37,15 @@ const funcao = (lista, nome) => {
 
 console.log(funcao(arrayDeNomes, "Darvas"));
 console.log(funcao(arrayDeNomes, "João"));
-console.log(funcao(arrayDeNomes, "Paula"));
+console.log(funcao(arrayDeNomes, "Paula"));*/
 
 
 /* 3. O código abaixo mostra uma função que recebe um array e devolve outro array.
-Explique rapidamente o que ela faz e sugira um nome melhor para ela!*/
+Explique rapidamente o que ela faz e sugira um nome melhor para ela!
+R. Criei uma array numero. resultado A soma 0 + primeiro índice, resultado B multiplica 1x primeiro
+índice e assim sucessivamente*/
 
-
-let arrayString = [Bom, dia, noite, tarde]
-let arrayNumero = [1, 4, 6, 8, 10]
+/*let arrayNumero = [1, 4, 6, 8, 10]
 
 function metodo(array) {
   let resultadoA = 0;
@@ -61,4 +61,30 @@ function metodo(array) {
   arrayFinal.push(resultadoB);
   return arrayFinal;
 }
-console.log(arrayFinal)
+console.log(metodo(arrayNumero));*/
+
+
+/* 4. Escreva as funções explicadas abaixo:
+
+a. A função deve receber um número correspondente aos "anos humanos" que um cachorro tem e calcular a "idade de cachorro" dele.
+Considere que 1 ano humano equivale a 7 anos de cachorro*/
+
+function multiplica(idade) {
+    
+    let idadeHumana = idade * 7
+    return idadeHumana
+}
+
+let idadeCachorro = multiplica(2)
+
+console.log(idadeCachorro)
+
+/* b.  Escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: o nome (string), a idade (number),
+o endereço (string) e um boolean que representa se é estudante ou não. Ela deve retornar uma string que unifique
+todas as informações da pessoa em uma só mensagem com o template:*/
+
+
+
+ 
+
+

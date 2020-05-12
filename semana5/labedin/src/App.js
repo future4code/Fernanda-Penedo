@@ -1,0 +1,73 @@
+import React from 'react';
+import './App.css';
+import CardGrande from './components/CardGrande/CardGrande';
+import ImagemButton from './components/ImagemButton/ImagemButton';
+import CardPequeno from './components/CardPequeno/CardPequeno';
+import Image from './components/Image/Image.jpg';
+
+function App() {
+  return (
+    <div className="App">
+      <div className="page-section-container">
+        <h2>Dados pessoais</h2>
+        <CardGrande 
+          imagem={Image}
+          nome="Fernanda Penedo" 
+          descricao="Olá, eu sou a Fernanda! Analista financeira, no momento sou estudante de Web Full Stack na Labenu."
+        />
+   
+        
+        <ImagemButton 
+          imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
+          texto="Ver mais"
+        />
+      </div>
+
+      <div className="page-section-container">
+        <h2>Experiências profissionais</h2>
+        <CardGrande 
+          imagem="data:image/png;base64,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" 
+          nome="Supergasbras Energia LTDA." 
+          descricao="Trabalhei como Assistente Adm/ Financeira generalista. Responsável pelo setor administrativo da filial Barueri, por 3 anos!" 
+        />
+        
+        <CardGrande 
+          imagem="https://industria.acionac.com.br/assets/img/logo.png" 
+          nome="Acionac Ind. Comercio LTDA" 
+          descricao="Responsável pelo setor fiscal. Emissão de NF`s, importação/ exportacão direta e indireta. Por 5 anos." 
+        />
+      </div>
+
+      <div className="page-section-container">
+        <h2>Sem redes sociais</h2>
+        <ImagemButton 
+          imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTEnPT0k7GBnXX5l1HsTCi-bRr4wl6AX1h0s2wWJh2p81oxr_0F&usqp=CAU" 
+          texto="Facebook Não tenho"
+        />        
+
+        <ImagemButton 
+          imagem="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1-1.png" 
+          texto="Twitter - Não tenho" 
+        />        
+      </div>
+
+      <div className="page-section-container">
+        <h2>Dados para Contato</h2>
+        <CardPequeno 
+          imagem="data:image/png;base64,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" 
+          nome="E-mail: fernandaflores100@gmail.com" 
+          descricao="Trabalhei como Assistente Adm/ Financeira generalista. Responsável pelo setor administrativo da filial Barueri, por 3 anos!" 
+        />
+
+          <CardPequeno 
+          nome="Endereço: Rua das Rosas, 1000. Jd. Orquideas. Cidade Bela"
+          imagem="data:image/png;base64,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" 
+          telefone="55 11 99999-7070" 
+        />
+        
+      </div>
+    </div>
+  );
+}
+
+export default App;

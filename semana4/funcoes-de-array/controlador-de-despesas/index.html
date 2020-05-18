@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>CONTROLADOR DE DESPESAS</title>
+  </head>
+
+
+  <body>
+    <div id="controle">
+    <h2>Controlador de Despesas</h3>
+    <h4>Cadastro de Despesas</h4>
+
+    <form id="cadastro">
+      <label>Valor</label>
+    <input id="valor" type="number" placeholder="Coloque valor">
+
+    <label>Despesas (Casa, Alimentação, Outros)</label>
+    <select name="TipodeDespesas" id="tipoDespesa">
+    <option value="casa">Casa</option>
+    <option value="alimentacao">Alimentação</option>
+    <option value="outros">Outros</option>
+    
+  </select>
+  <label>Descrição</label>
+  <input id="descricao" type="text">
+
+  <button onchange="dadosDespesa()">Inserir Despesa</button>
+  
+</form>
+</div>
+<hr>
+
+<div id="detalhadas">
+  <h2>Despesas Detalhadas</h3>
+<form>
+  <label>Despesas (Casa, Alimentação, Outros)</label>
+    <select name="TipodeDespesas" id="tipoDespesa">
+    <option value="casa">Casa</option>
+    <option value="alimentacao">Alimentação</option>
+    <option value="outros">Outros</option>
+
+  </select>
+  <label>Valor Mín.</label>
+  <input id="vMin" type="number">
+
+  <label>Valor Max.</label>
+  <input id="vMax" type="number">
+
+  <button onchange="filtrar()">Filtrar</button>
+  <button onchange="limparFiltro()">Limpar Filtro</button>
+
+</form>
+</div>
+<hr>
+
+<div id="extrato">
+    <h2>Extrato</h2>
+    <h3>Valor Total:</h3>
+
+</div>
+
+<hr>
+
+</body>
+</html>
